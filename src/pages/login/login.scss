@@ -1,0 +1,30 @@
+page-login{
+
+
+
+  .scroll-content {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .scroll {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+
+}
+
+.img-loaded{
+  background-color:#ffffff;
+  position: relative;
+  left: 50%;
+  margin-left: -90px;
+  top: 30px;
+}
+
+.login{
+  background-color:#f56723;
+  margin:20px 0;
+}

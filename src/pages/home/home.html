@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <!--<ion-title>身边企化</ion-title>-->
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides class="slider" auto-play="true" >
+    <ion-slide class="slider-slide">
+      <div>
+      <img src="http://image2.chinatelecom-ec.com/upfiles/189v2/sn/images/2017/3/16aa5781-b8d7-4602-9b46-72194c7541f7.jpg">
+      </div>
+    </ion-slide>
+    <ion-slide class="slider-slide">
+      <div>
+      <img src="http://image1.chinatelecom-ec.com/upfiles/189v2/sn/images/2016/3/32a24e52-7a71-4529-b0a6-e5b57a61ef15.jpg">
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3 class="darkorange" (click)="to_helper()">
+        <img src="http://www.189.cn/upfiles/189v2/bj/images/2015/1/4af048a6-b6db-404c-822c-4c2a74dc7bea.png">
+        <h6>智能推荐</h6>
+      </ion-col>
+      <ion-col col-3 class="deepskyblue" (click)="offer_Info()">
+        <img src="http://www.189.cn/upfiles/189v2/bj/images/2015/1/c388b5ff-1a82-4e99-94e1-89094d270329.png">
+        <h6>套餐查询</h6>
+      </ion-col>
+      <ion-col col-3 class="pink">
+        <img src="http://www.189.cn/upfiles/189v2/bj/images/2015/1/42dcaf77-19ba-4628-b5cd-9254a0818f5b.png">
+        <h6>费用查询</h6>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

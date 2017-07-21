@@ -1,0 +1,40 @@
+<ion-menu [content]="content">
+  <ion-header align-title="center">
+    <ion-toolbar >
+      <ion-title>查立得</ion-title>
+    </ion-toolbar>
+
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+
+    </ion-list>
+    <ion-list>
+
+       <ion-grid>
+          <ion-row>
+            <ion-col col-5 offset-2 class="grid-basic-page">
+              <button ion-button color="dark" clear large>
+                <img src="../assets/icon/account.png">
+                <!--<button (click)="userInfo()"></button>-->
+
+              </button>
+
+            </ion-col>
+          </ion-row>
+         <ion-row>
+           <ion-col col-5 offset-2 class="grid-basic-page">
+             {{account}}
+           </ion-col>
+         </ion-row>
+        </ion-grid>
+
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

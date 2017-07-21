@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!--<ion-infinite-scroll-content>
+  <ion-infinite-scroll scrollY="true">
+    <ion-list>
+      <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+        <ion-icon [name]="item.icon" item-left></ion-icon>
+        {{item.title}}
+        <div class="item-note" item-right>
+          {{item.note}}
+        </div>
+      </button>
+    </ion-list>
+  </ion-infinite-scroll>
+
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+
+</ion-infinite-scroll-content>-->
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      Header
+    </ion-list-header>
+
+    <ion-item>
+      Item
+    </ion-item>
+
+    <ion-item detail-push>
+      Item with Detail Arrow
+    </ion-item>
+
+    <button ion-item (click)="buttonClick()">
+      Button Item
+    </button>
+
+    <ion-item-divider>
+      Item Divider
+    </ion-item-divider>
+
+    <button ion-item detail-none (click)="buttonClick()">
+      Button Item with no Detail Arrow
+    </button>
+
+    <a ion-item href="https://www.ionicframework.com">
+      Anchor Item
+    </a>
+
+    <ion-item>
+      Item with no border
+    </ion-item>
+
+
+  </ion-list>
+</ion-content>
+
